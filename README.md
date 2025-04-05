@@ -89,19 +89,19 @@ Attendify is a web-based MVP for attendance management system designed for schoo
 
  1. ### Clone repo
 
-    ```
+    ```bash
     git clone https://github.com/praveenmahasena/chat_auth.git
     ```
 
  2. ### Change working dir
 
-   ```
+    ```bash
     cd /server
     ```
 
  3. ### Install dependency
 
-    ```
+    ```bash
     npm install
     ```
 
@@ -111,7 +111,7 @@ Attendify is a web-based MVP for attendance management system designed for schoo
  5. ### Config
     These properties goes into .env file
 
-    ```
+    ```bash
         PORT=
         DB_NAME=
         DB_USR=
@@ -125,13 +125,13 @@ Attendify is a web-based MVP for attendance management system designed for schoo
 
  6. Start the backend in development mode server
 
-    ```
+    ```bash
         npm run dev
     ```
 
  7. Start the backend in prod mode server
 
-    ```
+    ```bash
         npm run prod
     ```
 
@@ -139,19 +139,19 @@ Attendify is a web-based MVP for attendance management system designed for schoo
 
    1. ### Change working dir
 
-        ```
+        ```bash
         cd /client
         ```
 
    2. ### Install dependency
 
-       ```
+       ```bash
        npm install
        ```
 
    3. ### build
 
-        ```
+        ```bash
         npm run build
         ```
 
