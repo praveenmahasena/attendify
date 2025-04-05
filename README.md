@@ -112,27 +112,27 @@ Attendify is a web-based MVP for attendance management system designed for schoo
     These properties goes into .env file
 
     ```bash
-        PORT=
-        DB_NAME=
-        DB_USR=
-        DB_HOST=
-        DB_PASSWORD=
-        DB_PORT=
-        DB_SSL=
-        JWT_KEY=
+     PORT=
+     DB_NAME=
+     DB_USR=
+     DB_HOST=
+     DB_PASSWORD=
+     DB_PORT=
+     DB_SSL=
+     JWT_KEY=
 
     ```
 
  6. Start the backend in development mode server
 
     ```bash
-        npm run dev
+    npm run dev
     ```
 
  7. Start the backend in prod mode server
 
     ```bash
-        npm run prod
+    npm run prod
     ```
 
 ## Frontend Setup
