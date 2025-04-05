@@ -1,6 +1,6 @@
 # Attendify
 
-Attendify is a web-based attendance management system designed for schools, colleges, or any educational institution. The app provides role-based access for admins , teachers , and students to manage classes, mark attendance, view reports, and update personal profiles.
+Attendify is a web-based MVP for attendance management system designed for schools, colleges, or any educational institution. The app provides role-based access for admins , teachers , and students to manage classes, mark attendance, view reports, and update personal profiles.
 
 ## Features
 
@@ -60,28 +60,91 @@ Attendify is a web-based attendance management system designed for schools, coll
 
 ## Frontend Routes
 
-| Route |  ROLE                          | Description                                              |
-|:-------|:----------------------------------:|---------------------------------------------------------:|
-| /    | /api/student/profile/:studentId    | Fetches the student's profile information.               |
-| /login    | /api/student/profile/:studentId    |  Updates the student's profile information.              |
-| /signup    | /api/student/dashboard             | Fetches the student's attendance history and statistics. |
-| /admin/dashboard    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| /admin/users     | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| /admin/classes    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
-| GET    | /api/student/attendance/:studentId | Fetches the student's attendance history.                |
+| Route                          |  ROLE   | Description                                 |
+|:-------------------------------|:--------|:--------------------------------------------|
+| /                              | Public  | Homepage (Landing page with login/signup).  |
+| /login                         | Public  | Login page for all users.                   |
+| /signup                        | Public  | Signup page for new users (optional).       |
+| /admin/dashboard               | Admin   | Admin dashboard landing page.               |
+| /admin/users                   | Admin   | List of all users (teachers and students).  |
+| /admin/classes                 | Admin   | List of all classes.                        |
+| /admin/reports                 | Admin   | Attendance reports for admins.              |
+| /teacher/dashboard             | Teacher | Teacher dashboard landing page.             |
+| /teacher/classes               | Teacher | List of classes assigned to the teacher.    |
+| /teacher/attendance/:classId   | Teacher | Mark attendance for a specific class.       |
+| /teacher/reports               | Teacher | Attendance reports for teachers.            |
+| /student/dashboard             | Student | Student dashboard showing attendance stats. |
+| /student/profile/:studentId    | Student | Student profile page (view/edit details).   |
+| /student/attendance/:studentId | Student | Student attendance history.                 |
 
+## Setup Instructions
+ - Install (Node.js)[https://nodejs.org] and npm.
+ - Install (PostgreSQL)[https://www.postgresql.org/download/].
+ - Install (Git)[https://git-scm.com/].
+
+## Clone the Repository
+
+
+## Backend Setup
+
+ 1. ### Clone repo
+    ```bash
+    git clone https://github.com/praveenmahasena/chat_auth.git
+    ```
+ 2. ### Change working dir
+   ```bash
+    cd /server
+    ```
+
+ 2. ### Install dependency
+    ```bash
+    npm install
+    ```
+ 3. ### Migrate DB
+    use (psqltool)[https://github.com/praveenmahasena/sqltool/edit/main/README.md] to do migration
+ 4. ### Config
+    These properties goes into .env file
+    ```
+        PORT=
+        DB_NAME=
+        DB_USR=
+        DB_HOST=
+        DB_PASSWORD=
+        DB_PORT=
+        DB_SSL=
+        JWT_KEY=
+
+    ```
+ 5. Start the backend in development mode server
+    ```bash
+        npm run dev
+    ```
+ 6. Start the backend in prod mode server
+    ```bash
+        npm run prod
+    ```
+
+## Frontend Setup
+
+   1. ### Change working dir
+        ```bash
+        cd /client
+        ```
+   2. ### Install dependency
+       ```bash
+       npm install
+       ```
+   3. ### build
+        ```bash
+        npm run build
+        ```
+## Upcoming features
+ - Proper authentication with cookies and JWT
+ - Email validation via OTP
+
+## Upcoming dev features
+ - TypeScript intergration for backend
+ - Alternative Golang server
+ - Protected routes
+
+# This is a MVP for attendance software
