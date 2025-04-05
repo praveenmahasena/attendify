@@ -163,5 +163,9 @@ Attendify is a web-based MVP for attendance management system designed for schoo
  - TypeScript intergration for backend
  - Alternative Golang server
  - Protected routes
+ - Moving toward to micro service
+ - Isolating services via containerizing
+ - deploying to [Docker](https://www.docker.com/)
+ - Docker node management with [K8S](https://kubernetes.io/)
 
 # This is a MVP for attendance software
