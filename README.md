@@ -78,9 +78,9 @@ Attendify is a web-based MVP for attendance management system designed for schoo
 | /student/attendance/:studentId | Student | Student attendance history.                 |
 
 ## Setup Instructions
- - Install (Node.js)[https://nodejs.org] and npm.
- - Install (PostgreSQL)[https://www.postgresql.org/download/].
- - Install (Git)[https://git-scm.com/].
+ - Install [Node.js](https://nodejs.org) and npm.
+ - Install [PostgreSQL](https://www.postgresql.org/download/).
+ - Install [Git](https://git-scm.com/).
 
 ## Clone the Repository
 
@@ -101,7 +101,7 @@ Attendify is a web-based MVP for attendance management system designed for schoo
     npm install
     ```
  3. ### Migrate DB
-    use (psqltool)[https://github.com/praveenmahasena/sqltool/edit/main/README.md] to do migration
+    use [psqltool](https://github.com/praveenmahasena/sqltool/) to do migration
  4. ### Config
     These properties goes into .env file
     ```
