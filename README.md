@@ -27,7 +27,7 @@ Attendify is a web-based attendance management system designed for schools, coll
 ## Admin Routes
 
 | Method |  Endpoint                 | Description                                                   |
-|:-------|:-------------------------:|--------------------------------------------------------------:|
+|:-------|:-------------------------:|:-------------------------------------------------------------:|
 | GET    | /api/admin/dashboard      | Fetches admin dashboard metrics (total users, classes, etc.). |
 | GET    | /api/admin/users          | Fetches all users (teachers and students).                    |
 | GET    | /api/admin/classes        | Fetches all classes.                                          |
@@ -38,7 +38,7 @@ Attendify is a web-based attendance management system designed for schools, coll
 ## Teacher Routes
 
 | Method |  Endpoint                              | Description                                          |
-|:-------|:--------------------------------------:|-----------------------------------------------------:|
+|:-------|:--------------------------------------:|:----------------------------------------------------:|
 | GET    | /api/teacher/dashboard                 | Fetches teacher dashboard metrics.                   |
 | GET    | /api/teacher/classes                   | Fetches all classes assigned to the teacher.         |
 | GET    | /api/teacher/attendance/:classId       | Fetches attendance records for a specific class..    |
@@ -52,7 +52,7 @@ Attendify is a web-based attendance management system designed for schools, coll
 ## Student Routes
 
 | Method |  Endpoint                          | Description                                              |
-|:-------|:----------------------------------:|---------------------------------------------------------:|
+|:-------|:----------------------------------:|:--------------------------------------------------------:|
 | GET    | /api/student/profile/:studentId    | Fetches the student's profile information.               |
 | PUT    | /api/student/profile/:studentId    |  Updates the student's profile information.              |
 | GET    | /api/student/dashboard             | Fetches the student's attendance history and statistics. |
