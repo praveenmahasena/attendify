@@ -137,23 +137,23 @@ Attendify is a web-based MVP for attendance management system designed for schoo
 
 ## Frontend Setup
 
-   1. ### Change working dir
+ 1. ### Change working dir
 
-      ```bash
-      cd /client
-      ```
+    ```bash
+    cd /client
+    ```
 
-   2. ### Install dependency
+ 2. ### Install dependency
 
-      ```bash
-      npm install
-      ```
+    ```bash
+    npm install
+    ```
 
-   3. ### build
+ 3. ### build
 
-      ```bash
-      npm run build
-      ```
+   ```bash
+   npm run build
+   ```
 
 ## Upcoming features
  - Proper authentication with cookies and JWT
