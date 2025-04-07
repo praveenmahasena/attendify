@@ -28,7 +28,7 @@ export default function AdminLogin() {
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold text-blue-600">AttendancePro</h1>
+          <h1 className="text-2xl font-bold text-blue-600">Attendify</h1>
           <p className="text-gray-600">Admin Login – Secure Access</p>
         </div>
 
@@ -86,7 +86,7 @@ export default function AdminLogin() {
 
       {/* Footer */}
       <footer className="absolute bottom-0 w-full text-center py-4 text-gray-600">
-        © 2023 AttendancePro. All rights reserved.
+        © 2023 Attendify. All rights reserved.
       </footer>
     </div>
     )
