@@ -1,15 +1,15 @@
 import "dotenv/config";
 
-import express from "express";
+import cookie from "cookie-parser";
+import express, {NextFunction, Request, Response} from "express";
 import helmet from "helmet";
 import process from "node:process";
 import volleyball from "volleyball";
-import cookie from "cookie-parser";
 
 import connection from "./postgres/connect.js";
 import admin from "./routes/admin.js";
-import teacher from "./routes/teacher.js";
 import student from "./routes/student.js";
+import teacher from "./routes/teacher.js";
 
 const PORT = process.env.PORT || 4242;
 const app = express();
@@ -19,13 +19,16 @@ app.use(helmet());
 app.use(volleyball);
 app.use(express.json());
 
-app.use((req, res, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
   res.setHeader(
       "Access-Control-Allow-Methods",
       "GET, POST, PUT, DELETE, OPTIONS",
   );
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, cookie");
+  res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization, cookie",
+  );
   res.setHeader("Access-Control-Allow-Credentials", true);
 
   if (req.method == "OPTIONS") {

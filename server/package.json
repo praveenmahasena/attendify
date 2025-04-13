@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "./src/index.js",
+  "main": "./built/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.js",
-    "build": "node ./src/index.js"
+    "dev": "nodemon ./built/index.js",
+    "build": "node ./built/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/express": "^5.0.1",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.7",
