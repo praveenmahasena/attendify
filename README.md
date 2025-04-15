@@ -1,5 +1,5 @@
 # Attendify
-(The app is being rebuild from groud up please visit [repo](https://github.com/praveenmahasena/attendify-v2).
+#### The app is being rebuild from groud up please visit [repo](https://github.com/praveenmahasena/attendify-v2).
 
 Attendify is a web-based MVP for attendance management system designed for schools, colleges, or any educational institution. The app provides role-based access for admins , teachers , and students to manage classes, mark attendance, view reports, and update personal profiles.
 
